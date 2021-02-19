@@ -32,7 +32,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy": "rm -rf docs && yarn build && mv build docs && git add . && git commit && git push origin main"
   },
   "eslintConfig": {
     "extends": [
